@@ -1,0 +1,14 @@
+.wrapper { 
+    display: flex;
+    height: 100vh;
+}
+
+.side-bar {
+    height: 70vh;
+    display: flex;
+    align-items: flex-start
+}
+
+app-main{
+    width: -webkit-fill-available;
+}

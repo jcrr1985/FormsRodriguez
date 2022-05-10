@@ -1,0 +1,34 @@
+.lain{
+    background-image: url('../../../assets/imagenes/fondos/lain.jpg');
+}
+.ergo{
+    background-image: url('../../../assets/imagenes/fondos/ergo.jpg');
+}
+.kenshin {
+    background-image: url('../../../assets/imagenes/fondos/kenshin.jfif');
+}
+.cowboy{
+    background-image: url('../../../assets/imagenes/fondos/cowboy.png');
+}
+.berserk{
+    background-image: url('../../../assets/imagenes/fondos/berserk.jpg');
+}
+
+.pantalla-full{
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.selecciona-titulo {
+    text-align: center;
+    color: slategray;
+}
+
+.serie-info {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}

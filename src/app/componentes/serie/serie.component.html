@@ -1,0 +1,10 @@
+<div class="card pantalla-full">
+    <div class="card-body">
+        <h1 *ngIf="serieSeleccionada == 'x'" class="selecciona-titulo">Selecciona una serie</h1>
+        <div class="pantalla-full serie-info" [ngClass]="{'lain': serieSeleccionada == 'lain', 'berserk': serieSeleccionada == 'berserk', 
+        'kenshin': serieSeleccionada == 'kenshin', 'ergo': serieSeleccionada == 'ergo', 'cowboy': serieSeleccionada == 'cowboy'}">
+        <h1>{{titulo}}</h1>
+        <br>
+        <p>{{info}}</p>
+    </div>
+</div>
