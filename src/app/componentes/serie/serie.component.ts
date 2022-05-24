@@ -20,13 +20,13 @@ export class SerieComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    this.serieSeleccionada = changes['serieSeleccionada']['currentValue']
+    this.serieSeleccionada = changes['serieSeleccionada']['currentValue'];
     console.log('changes:', this.serieSeleccionada)
-    this.serieObject = changes['serieSeleccionada']
+    this.serieObject = changes['serieSeleccionada'];
     console.log('this.serieObject', this.serieObject);
     this.serieObject = this.datosCompartidosService.getSerieObject;
-    this.titulo = this.serieObject.nombre;
-    this.info = this.serieObject.info;
+    this.titulo = this.serieObject?.nombre;
+    this.info = this.serieObject?.info;
 
     console.log('this.serieObject', this.serieObject)
   }

@@ -6,3 +6,59 @@
 app-serie {
     width: max-content;
 }
+
+// MODAL
+
+.modal-pantalla-final {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #111111bd;
+    display: grid;
+    place-content: center;
+
+    .wrapper-final {
+        border-radius: 8px !important;
+        width: 500px;
+        height: auto;
+        background-color: rgb(84, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px 30px;
+        gap: 10px;
+        font-weight: bold;
+        form {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 20px 5px;
+            width: 90%; 
+            justify-content: center;
+            align-items: center;
+            input{
+                background-color: #000;
+                color: #fff;
+                width: 90%;
+                height: 50px;
+                border-radius: 8px;
+                font-size: 1.5rem;
+
+            }
+        }
+
+    }
+}
+.cerrar--modal-wrapper{
+    display: flex;
+    justify-content: end;
+    width: -webkit-fill-available;
+    .cerrar--modal{
+
+            font-size: 1.5rem;
+            color: #fff;
+
+    }
+}   

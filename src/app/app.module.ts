@@ -7,6 +7,11 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { SideBarComponent } from './componentes/side-bar/side-bar.component';
 import { MainComponent } from './componentes/main/main.component';
 import { SerieComponent } from './componentes/serie/serie.component';
+import { RegisterFormComponent } from './componentes/formularios/register-form/register-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +19,17 @@ import { SerieComponent } from './componentes/serie/serie.component';
     HeaderComponent,
     SideBarComponent,
     MainComponent,
-    SerieComponent
+    SerieComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

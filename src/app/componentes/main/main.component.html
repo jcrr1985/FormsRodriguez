@@ -1,2 +1,18 @@
 <app-serie [serieSeleccionada]="serieSeleccionada"></app-serie>
+<button mat-button>Open dialog</button>
 
+<section class="modal-pantalla-final" id = "modal-pantalla-final" *ngIf="mostrarModalFinal">
+
+
+    <div class="wrapper-final">
+        <div class="cerrar--modal-wrapper">
+            <span id="cerrar--modal" class="cerrar--modal" (click)="cerrarModal()">&times;</span>
+        </div>
+        <form [formGroup]="forma">
+            <input type="text" formControlName="email" placeholder="Ingresa tu usuario">
+            <input type="password" formControlName="pass" placeholder="Ingresa tu clave">
+        </form>
+
+    </div>
+
+</section>
